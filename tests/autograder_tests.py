@@ -35,7 +35,7 @@ class TestCodespace(unittest.TestCase):
         output_dict = json.loads(process.stdout)
 
         # Test
-        self.assertEqual(new_name.capitalize, output_dict['displayName'])
+        self.assertEqual(new_name.capitalize(), output_dict['displayName'])
 
         
 class TestFileExistence(unittest.TestCase):
